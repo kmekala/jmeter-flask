@@ -30,11 +30,13 @@ Run the flask_mock container and expose it on port 5000:
 docker run -d --name flask_mock -p 5000:5000 my-flask-mock python3 /opt/flask/app.py
 ```
 
+```
 -d: Runs the container in detached mode.
 --name flask_mock: Names the container flask_mock.
 -p 5000:5000: Maps port 5000 of the container to port 5000 on the host.
 my-flask-mock: The image we built earlier.
 python3 /opt/flask/app.py: The command to run the Flask application.
+```
 
 ## 3. Run the jmeter Container
 After the flask_mock container is running, you can now run the jmeter container. This container will link to the flask_mock container:
@@ -49,6 +51,7 @@ docker run --name jmeter \
 
  ```
 
+```
 --name jmeter: Names the container jmeter.
 -e TZ="UTC": Sets the environment variable TZ to UTC.
 --link flask_mock: Links the jmeter container to the flask_mock container to allow communication between them.
@@ -56,3 +59,4 @@ docker run --name jmeter \
 -v $(pwd)/reports:/opt/jmeter/reports: Mounts the local reports directory to /opt/jmeter/reports in the container.
 my-jmeter: The image we built earlier for jmeter.
 /opt/jmeter/entrypoint.sh: The entrypoint script for the jmeter container.
+```
