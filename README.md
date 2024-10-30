@@ -11,16 +11,16 @@ You need to build Docker images for both the JMeter and Flask Mock API services.
 ## Build the flask_mock image:
 
 ## Flask Application:
-```
+
 The Flask app simulates diagnostic devices by providing mocked endpoints for testing purposes. It is configured to run inside a Docker container, ensuring a consistent environment.
-```
+
 
 ```
 docker build -t my-flask-mock -f Dockerfile .
 ```
-```
+
 This command builds the my-flask-mock image using the Dockerfile located in the current directory.
-```
+
 ## Build the jmeter image:
 
 ```
