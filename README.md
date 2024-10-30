@@ -10,12 +10,17 @@ You need to build Docker images for both the JMeter and Flask Mock API services.
 
 ## Build the flask_mock image:
 
+## Flask Application:
+```
+The Flask app simulates diagnostic devices by providing mocked endpoints for testing purposes. It is configured to run inside a Docker container, ensuring a consistent environment.
+```
+
 ```
 docker build -t my-flask-mock -f Dockerfile .
 ```
-
+```
 This command builds the my-flask-mock image using the Dockerfile located in the current directory.
-
+```
 ## Build the jmeter image:
 
 ```
@@ -59,4 +64,48 @@ docker run --name jmeter \
 -v $(pwd)/reports:/opt/jmeter/reports: Mounts the local reports directory to /opt/jmeter/reports in the container.
 my-jmeter: The image we built earlier for jmeter.
 /opt/jmeter/entrypoint.sh: The entrypoint script for the jmeter container.
+```
+
+# Project Structure
+```
+.
+├── Dockerfile
+├── README.md
+├── app
+│   ├── app.py
+│   └── requirements.txt
+├── docker-compose.yml
+├── entrypoint.sh
+└── tests
+    └── poct_test_plan.jmx
+```
+
+# Components
+
+```
+Dockerfile: Defines the Docker image for the Flask application.
+README.md: Documentation for the project.
+app/: Contains the Flask application.
+app.py: The main Flask application file.
+requirements.txt: Python dependencies for the Flask app.
+docker-compose.yml: Configuration for Docker Compose to set up services.
+entrypoint.sh: Script to initialize and run the application.
+tests/: Contains JMeter test plans.
+poct_test_plan.jmx: JMeter test plan for performance testing.
+```
+
+# Setup Instructions
+
+## Prerequisites
+```
+Docker
+Docker Compose
+```
+
+# Getting Started
+
+## Clone the repository:
+```
+git clone <repository-url>
+cd <repository-directory>
 ```
