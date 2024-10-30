@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  jmeter:
+    build: .
+    environment:
+      TZ: "UTC"
+    volumes:
+      - ./tests:/opt/jmeter/tests
+      - ./reports:/opt/jmeter/reports  # Add this line
+    entrypoint: /opt/jmeter/entrypoint.sh
+    depends_on:
+      - flask_mock
+    links:
+      - flask_mock
+
+  flask_mock:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python3 /opt/flask/app.py
+    ports:
+      - "5000:5000"

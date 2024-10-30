@@ -1,0 +1,31 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1730253559265,125,Get Hemostasis Device Results,200,OK,Hemostasis Device Thread Group 1-1,text,true,,320,154,2,4,http://localhost:5000/hemostasis/device/ACL_TOP_001/results,102,0,63
+1730253559257,133,Get POCT Device Results,200,OK,POCT Device Thread Group 2-1,text,true,,301,149,2,4,http://localhost:5000/poct/device/GEM_5000_001/results,109,0,73
+1730253559334,56,Get Hemostasis Device Results,200,OK,Hemostasis Device Thread Group 1-2,text,true,,320,154,2,4,http://localhost:5000/hemostasis/device/ACL_TOP_001/results,52,0,2
+1730253559386,16,Get POCT Device Results,200,OK,POCT Device Thread Group 2-2,text,true,,301,149,2,3,http://localhost:5000/poct/device/GEM_5000_001/results,7,0,3
+1730253559405,23,Calibrate POCT Device,200,OK,POCT Device Thread Group 2-2,text,true,,274,237,2,2,http://localhost:5000/poct/device/GEM_5000_001/calibration,22,0,14
+1730253559403,25,Calibrate POCT Device,200,OK,POCT Device Thread Group 2-1,text,true,,274,237,2,2,http://localhost:5000/poct/device/GEM_5000_001/calibration,24,0,9
+1730253559830,13,Get Hemostasis Device Results,200,OK,Hemostasis Device Thread Group 1-3,text,true,,320,154,1,2,http://localhost:5000/hemostasis/device/ACL_TOP_001/results,13,0,6
+1730253559847,10,Get POCT Device Results,200,OK,POCT Device Thread Group 2-3,text,true,,301,149,1,1,http://localhost:5000/poct/device/GEM_5000_001/results,10,0,6
+1730253559859,14,Calibrate POCT Device,200,OK,POCT Device Thread Group 2-3,text,true,,274,237,1,1,http://localhost:5000/poct/device/GEM_5000_001/calibration,13,0,4
+1730253560328,5,Get Hemostasis Device Results,200,OK,Hemostasis Device Thread Group 1-4,text,true,,320,154,1,1,http://localhost:5000/hemostasis/device/ACL_TOP_001/results,5,0,1
+1730253560356,6,Get POCT Device Results,200,OK,POCT Device Thread Group 2-4,text,true,,301,149,1,1,http://localhost:5000/poct/device/GEM_5000_001/results,6,0,2
+1730253560363,5,Calibrate POCT Device,200,OK,POCT Device Thread Group 2-4,text,true,,274,237,1,1,http://localhost:5000/poct/device/GEM_5000_001/calibration,5,0,2
+1730253560824,7,Get Hemostasis Device Results,200,OK,Hemostasis Device Thread Group 1-5,text,true,,320,154,1,1,http://localhost:5000/hemostasis/device/ACL_TOP_001/results,7,0,3
+1730253560846,6,Get POCT Device Results,200,OK,POCT Device Thread Group 2-5,text,true,,301,149,1,1,http://localhost:5000/poct/device/GEM_5000_001/results,6,0,1
+1730253560853,27,Calibrate POCT Device,200,OK,POCT Device Thread Group 2-5,text,true,,274,237,1,1,http://localhost:5000/poct/device/GEM_5000_001/calibration,24,0,7
+1730253561328,4,Get Hemostasis Device Results,200,OK,Hemostasis Device Thread Group 1-6,text,true,,320,154,1,1,http://localhost:5000/hemostasis/device/ACL_TOP_001/results,4,0,1
+1730253561345,8,Get POCT Device Results,200,OK,POCT Device Thread Group 2-6,text,true,,301,149,1,1,http://localhost:5000/poct/device/GEM_5000_001/results,8,0,1
+1730253561354,4,Calibrate POCT Device,200,OK,POCT Device Thread Group 2-6,text,true,,274,237,1,1,http://localhost:5000/poct/device/GEM_5000_001/calibration,4,0,1
+1730253561822,12,Get Hemostasis Device Results,200,OK,Hemostasis Device Thread Group 1-7,text,true,,320,154,1,1,http://localhost:5000/hemostasis/device/ACL_TOP_001/results,12,0,1
+1730253561851,9,Get POCT Device Results,200,OK,POCT Device Thread Group 2-7,text,true,,301,149,1,1,http://localhost:5000/poct/device/GEM_5000_001/results,9,0,4
+1730253561861,14,Calibrate POCT Device,200,OK,POCT Device Thread Group 2-7,text,true,,274,237,1,1,http://localhost:5000/poct/device/GEM_5000_001/calibration,14,0,2
+1730253562315,8,Get Hemostasis Device Results,200,OK,Hemostasis Device Thread Group 1-8,text,true,,320,154,1,1,http://localhost:5000/hemostasis/device/ACL_TOP_001/results,8,0,2
+1730253562340,5,Get POCT Device Results,200,OK,POCT Device Thread Group 2-8,text,true,,301,149,1,1,http://localhost:5000/poct/device/GEM_5000_001/results,5,0,1
+1730253562345,7,Calibrate POCT Device,200,OK,POCT Device Thread Group 2-8,text,true,,274,237,1,1,http://localhost:5000/poct/device/GEM_5000_001/calibration,7,0,2
+1730253562811,13,Get Hemostasis Device Results,200,OK,Hemostasis Device Thread Group 1-9,text,true,,320,154,1,1,http://localhost:5000/hemostasis/device/ACL_TOP_001/results,13,0,6
+1730253562839,25,Get POCT Device Results,200,OK,POCT Device Thread Group 2-9,text,true,,301,149,1,1,http://localhost:5000/poct/device/GEM_5000_001/results,24,0,15
+1730253562864,28,Calibrate POCT Device,200,OK,POCT Device Thread Group 2-9,text,true,,274,237,1,1,http://localhost:5000/poct/device/GEM_5000_001/calibration,28,0,2
+1730253563308,7,Get Hemostasis Device Results,200,OK,Hemostasis Device Thread Group 1-10,text,true,,320,154,1,1,http://localhost:5000/hemostasis/device/ACL_TOP_001/results,7,0,2
+1730253563325,12,Get POCT Device Results,200,OK,POCT Device Thread Group 2-10,text,true,,301,149,1,1,http://localhost:5000/poct/device/GEM_5000_001/results,12,0,1
+1730253563338,8,Calibrate POCT Device,200,OK,POCT Device Thread Group 2-10,text,true,,274,237,1,1,http://localhost:5000/poct/device/GEM_5000_001/calibration,6,0,3
