@@ -109,3 +109,46 @@ Docker Compose
 git clone <repository-url>
 cd <repository-directory>
 ```
+
+# Test Plan Overview
+
+## Test Plan Name
+**Hemostasis and POCT Test Plan**
+
+## Thread Groups
+Two separate thread groups for different device types.
+
+### Hemostasis Device Thread Group
+- **Number of Threads:** 10
+- **Ramp-Up Time:** 5 seconds
+- **Loops:** 1 iteration per thread
+- **Action on Error:** Continue execution despite errors
+
+#### HTTP Request: Get Hemostasis Device Results
+- **Request Type:** GET
+- **Target URL:** `http://localhost:5000/hemostasis/device/ACL_TOP_001/results`
+- **Purpose:** Retrieve results from a Hemostasis device.
+
+### POCT Device Thread Group
+- **Number of Threads:** 10
+- **Ramp-Up Time:** 5 seconds
+- **Loops:** 1 iteration per thread
+- **Action on Error:** Continue execution despite errors
+
+#### HTTP Request: Get POCT Device Results
+- **Request Type:** GET
+- **Target URL:** `http://localhost:5000/poct/device/GEM_5000_001/results`
+- **Purpose:** Retrieve results from a POCT device.
+
+#### HTTP Request: Calibrate POCT Device
+- **Request Type:** POST
+- **Target URL:** `http://localhost:5000/poct/device/GEM_5000_001/calibration`
+- **Purpose:** Calibrate the POCT device.
+
+## Result Collection
+- **View Results Tree:** Captures and displays individual sample results.
+- **Summary Report:** Provides a summary of the test results, including metrics like response time and success rate.
+
+## Additional Details
+- **User-Defined Variables:** None specified.
+- **Assertions and Logging:** Various properties captured, such as time, latency, success, and thread name.
